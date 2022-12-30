@@ -8,14 +8,17 @@ body {
     text-align: center;
 }
 
-h1 {
-    color: darkkhaki;
-    animation: shake 10s infinite;
+.div-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h2,
-h3,
-h4,
+h1 {
+    color: rgb(213, 206, 99);
+    animation: shake 5s infinite;
+}
+
 h5 {
     color: slategray;
     font-weight: 400;
@@ -24,15 +27,15 @@ h5 {
 
 @keyframes anime-background {
     0% {
-        background: #0d0711;
+        background: #0e0d1d;
     }
 
     50% {
-        background: #15071a;
+        background: #1d253d;
     }
 
     100% {
-        background: #0d0711;
+        background: #0e0d1d;
     }
 
 }
@@ -51,7 +54,7 @@ h5 {
     }
 
     30% {
-        transform: translate(3px, 2px) rotate(0deg);
+        transform: translate(3px, 2px) rotateY(180deg);
     }
 
     40% {
@@ -63,7 +66,7 @@ h5 {
     }
 
     60% {
-        transform: translate(-3px, 1px) rotateY(1800deg);
+        transform: translate(-3px, 1px) rotateY(-180deg);
     }
 
     70% {
@@ -75,7 +78,7 @@ h5 {
     }
 
     90% {
-        transform: translate(1px, 2px) rotate(0deg);
+        transform: translate(1px, 2px) rotateY(360deg);
     }
 
     100% {
