@@ -1,31 +1,47 @@
+:root {
+  padding: 0em;
+  margin: 0em;
+}
+
 body {
   animation: anime1 5s infinite;
   font-family: "Poppins", sans-serif;
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  gap: 5em;
-  overflow: hidden;
+  gap: 0em;
+  overflow: auto;
 }
 
 span {
   color: #3d943d;
 }
 
+.bgk1 {
+  padding: 1em;
+  border-radius: 1em;
+  background: #050d18;
+}
+
 h1 {
-  animation: anime2 4s 2;
-  font-size: 4em;
+  animation: anime2 8s 3;
+  font-size: 2em;
   color: whitesmoke;
   cursor: pointer;
 }
 
-h4,
 h5 {
-  color: #bdb7b7;
+  color:lightslategray;
   font-weight: 500;
+}
+
+nav {
+  background: #050d18;
+  padding: 1em;
+  border-radius: 2em;
 }
 
 nav a {
@@ -34,23 +50,25 @@ nav a {
   color: whitesmoke;
   font-size: medium;
   font-weight: 500;
-  margin: 0em 2em;
+  margin: 0em 1em;
+  padding: 0em 0em;
   position: relative;
+  flex-wrap: nowrap;
 }
 
 nav a:hover {
-  color: #3d943d;
+  color: #59c959;
 }
 
-nav a::before {
+a::before {
   content: "";
   border-radius: 1em;
   position: absolute;
-  bottom: -1em;
+  bottom: -0.7em;
   width: 0%;
   height: 2px;
   background: antiquewhite;
-  animation: shake 2s infinite;
+  animation: shake 1s infinite;
   transition: all 1s;
 }
 
@@ -85,16 +103,16 @@ nav a:hover::before {
 
   20% {
     transform: rotate(2deg);
-    color: #ee1a1a;
-  }
-
-  30% {
-    transform: rotateX(180deg);
-  }
-
-  40% {
-    transform: rotate(-2deg);
     color: #3d943d;
+}
+
+30% {
+    transform: rotateX(180deg);
+}
+
+40% {
+    transform: rotate(-2deg);
+    color: #ebcd36;
   }
 
   50% {
@@ -103,7 +121,7 @@ nav a:hover::before {
 
   60% {
     transform: rotate(-2deg);
-    color: hsl(50, 70%, 50%);
+    color: #050d18;
   }
 
   70% {
@@ -120,7 +138,7 @@ nav a:hover::before {
   }
 
   100% {
-    transform: rotate(-2deg);
+    transform: rotate(0deg);
   }
 }
 
