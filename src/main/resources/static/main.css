@@ -1,41 +1,19 @@
 :root {
-  padding: 0em;
-  margin: 0em;
+  --bg1: #050d18;
 }
 
 body {
-  animation: anime1 5s infinite;
   font-family: "Poppins", sans-serif;
+  background: var(--bg1);
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  gap: 0em;
-  overflow: auto;
-}
-
-span {
-  color: #3d943d;
-}
-
-.bgk1 {
-  padding: 1em;
-  border-radius: 1em;
-  background: #050d18;
-}
-
-h1 {
-  animation: anime2 8s 3;
-  font-size: 2em;
-  color: whitesmoke;
-  cursor: pointer;
-}
-
-h5 {
-  color:lightslategray;
-  font-weight: 500;
+  gap: 1em;
+  overflow: hidden;
+  animation: anime1 6s 3;
 }
 
 nav {
@@ -50,10 +28,9 @@ nav a {
   color: whitesmoke;
   font-size: medium;
   font-weight: 500;
-  margin: 0em 1em;
-  padding: 0em 0em;
+  margin: 0em 2em;
+  /* padding: 0em 0em; */
   position: relative;
-  flex-wrap: nowrap;
 }
 
 nav a:hover {
@@ -69,7 +46,7 @@ a::before {
   height: 2px;
   background: antiquewhite;
   animation: shake 1s infinite;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 nav a:hover::before {
@@ -78,9 +55,24 @@ nav a:hover::before {
   background: #3d943d;
 }
 
+span {
+  color: #3d943d;
+}
+
+h1 {
+  animation: anime2 5s 5;
+  font-size: 2em;
+  color: whitesmoke;
+}
+
+h5 {
+  color: lightslategray;
+  font-weight: 500;
+}
+
 @keyframes anime1 {
   0% {
-    background: #050d18;
+    background: var(--bg1);
   }
 
   50% {
@@ -88,7 +80,7 @@ nav a:hover::before {
   }
 
   100% {
-    background: #050d18;
+    background: var(--bg1);
   }
 }
 
@@ -104,41 +96,45 @@ nav a:hover::before {
   20% {
     transform: rotate(2deg);
     color: #3d943d;
-}
+  }
 
-30% {
+  30% {
     transform: rotateX(180deg);
-}
+  }
 
-40% {
+  40% {
     transform: rotate(-2deg);
-    color: #ebcd36;
+    color: #ffd500;
   }
 
   50% {
     transform: rotate(2deg);
+    color: #fd0000;
   }
 
   60% {
     transform: rotate(-2deg);
-    color: #050d18;
+    color: var(--bg1);
   }
 
   70% {
     transform: rotate(2deg);
+    color: #076eff;
   }
 
   80% {
-    color: whitesmoke;
     transform: rotateY(-180deg);
+    color: whitesmoke;
   }
 
   90% {
     transform: rotate(2deg);
+    color: #7d0072;
   }
 
   100% {
     transform: rotate(0deg);
+    color: #ff9100;
   }
 }
 
