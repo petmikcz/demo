@@ -1,0 +1,22 @@
+body{
+    background: black;
+}
+
+
+.child {
+  width: 5em;
+  height: 5em;
+  background: rgb(22, 41, 41);
+  border-radius: 3em;
+}
+
+.parent {
+  display: flex;
+  height: 600px;
+  border: 1px dashed coral;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5em;
+  justify-content:  space-around;
+  align-items: center;
+}
