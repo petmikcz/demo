@@ -20,14 +20,14 @@ public class DemoApplication {
 
     public DemoApplication() {
 
-        Scanner scanner = new Scanner(System.in);
-        log.info("Please enter\n" +
-                " P for Personal account\n" +
-                " B for Business account\n" +
-                " C for Checking account\n" +
-                "----------------------------");
-        BankAccount account = BankAccountFactory.createAccount(scanner.nextLine());
-        account.register();
+        // Scanner scanner = new Scanner(System.in);
+        // log.info("Please enter\n" +
+        //         " P for Personal account\n" +
+        //         " B for Business account\n" +
+        //         " C for Checking account\n" +
+        //         "----------------------------");
+        // BankAccount account = BankAccountFactory.createAccount(scanner.nextLine());
+        // account.register();
 
     }
 
