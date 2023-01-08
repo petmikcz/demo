@@ -1,0 +1,53 @@
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1em;
+  flex-wrap: nowrap;
+  padding: 5em;
+  text-align: center;
+}
+
+.box {
+  background: #1b2232;
+  min-width: 10em;
+  padding: 2em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.box h3 {
+  color: #a0bbd4;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 1em 0em;
+  transition: all 0.3 ease;
+}
+
+.box p {
+  color: darkgray;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.box:hover h3 {
+  color: #c1d3e4;
+}
+.box:hover {
+  background: #2f3953;
+  border: 1px black;
+  transform: scale(1.04);
+  transition: all 0.4s ease-in-out;
+}
+
+.prod-title {
+  text-align: center;
+}
+
+.prod-section {
+  padding-top: 6em;
+}
+
+i {
+  color: rgb(253, 255, 129);
+}
